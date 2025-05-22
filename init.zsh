@@ -1,8 +1,10 @@
 export ZSHCONF="$HOME/.config/zsh"
 export ZSH="$ZSHCONF/deps/ohmyzsh"
 
+cp "$ZSHCONF/yeastwood.zsh-theme" "$ZSH/custom/themes/yeastwood.zsh-theme"
+
 # oh-my-zsh configuration
-ZSH_THEME="eastwood"
+ZSH_THEME="yeastwood"
 plugins=(git vi-mode)
 
 # Setup Editor
@@ -20,6 +22,13 @@ if [[ ! -f "$ZSHCONF/path.zsh" ]]; then
 fi
 
 source $ZSHCONF/path.zsh
+
+# Setup Local config
+if [[ ! -f "$ZSHCONF/local.zsh" ]]; then
+    cp $ZSHCONF/local.zsh.default $ZSHCONF/local.zsh
+fi
+
+source $ZSHCONF/local.zsh
 
 # Run oh-my-zsh
 source $ZSH/oh-my-zsh.sh

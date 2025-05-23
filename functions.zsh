@@ -36,3 +36,7 @@ function sourceme {
     fi
 }
 
+function cdd {
+    cd "$ZLM_ORIGINAL_PWD"
+}
+

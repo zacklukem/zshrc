@@ -1,3 +1,4 @@
+export ZLM_ORIGINAL_PWD=$(pwd)
 export ZSHCONF="$HOME/.config/zsh"
 export ZSH="$ZSHCONF/deps/ohmyzsh"
 

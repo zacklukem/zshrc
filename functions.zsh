@@ -1,5 +1,17 @@
 
 function sourceme {
+    if [ "$1" = "--init" ]; then
+        echo "Initializing sourceme"
+        if [ -f "$PWD/.zlm_sourceme.zsh" ]; then
+            echo "Sourceme already initialized"
+            return 1
+        fi
+
+        echo "Creating $PWD/.zlm_sourceme.zsh"
+        echo 'echo "TODO"' > "$PWD/.zlm_sourceme.zsh"
+        return 0
+    fi
+
     curr_dir=$(realpath "$PWD")
     file_name=".zlm_sourceme.zsh"
 

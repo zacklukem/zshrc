@@ -30,6 +30,9 @@ fi
 
 source $ZSHCONF/local.zsh
 
+# Functions
+source $ZSHCONF/functions.zsh
+
 # Run oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 

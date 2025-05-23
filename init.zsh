@@ -33,3 +33,7 @@ source $ZSHCONF/local.zsh
 # Run oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+if [[ -z "$ZLM_DISBLE_SYNTAX_HIGHLIGHTING" ]]; then
+    source "$ZSHCONF/deps/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
+

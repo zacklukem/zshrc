@@ -1,2 +1,3 @@
 # Local zsh configuration
 # export ZLM_DISABLE_GIT_PROMPT=1
+# export ZLM_DISBLE_SYNTAX_HIGHLIGHTING=1

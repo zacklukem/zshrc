@@ -1,3 +1,6 @@
 [submodule "deps/ohmyzsh"]
 	path = deps/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "deps/zsh-syntax-highlighting"]
+	path = deps/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

@@ -15,5 +15,5 @@ git_custom_status() {
   fi
 }
 
-PROMPT=$' %{$fg[246]%}┌$(git_custom_status)%{$ZLM_PROMPT_COLOR%}[%~% ]%{$reset_color%}%B
+PROMPT=$' %{$fg[246]%}┌$(git_custom_status)%{$ZLM_PROMPT_COLOR%}[%~% ]%{$fg[blue]%}[$ZLM_PROMPT_HOSTNAME]%{$reset_color%}%B
  %{$fg[246]%}└%{$fg[007]%}$>%{$reset_color%}%b '
